@@ -1,0 +1,42 @@
+{
+    "name": "Ekart-Bot",
+    "description": "Telegram bot to track Ekart packages.",
+    "keywords": [
+      "telegram",
+      "best",
+      "Ekart",
+      "filpkart",
+      "bot"
+    ],
+    "repository": "https://github.com/subinps/Ekart-Bot",
+    "env": {
+      "API_ID": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": ""
+      },
+      "API_HASH": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": ""
+      },
+      "BOT_TOKEN": {
+        "description": "Your bot token from @BotFather",
+        "value": ""
+      },
+      "EKART_API_URL": {
+        "description": "Get it from https://github.com/cachecleanerjeet/Ekart-API",
+        "value": ""
+      }
+      
+    },
+    "formation": {
+      "worker": {
+        "quantity": 1,
+        "size": "free"
+      }
+    },
+    "buildpacks": [
+      {
+        "url": "heroku/python"
+      }
+    ]
+  }
